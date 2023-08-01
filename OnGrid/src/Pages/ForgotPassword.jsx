@@ -16,7 +16,7 @@ function ForgotPassword() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:1009/api/auth/forgot-password",
+        "https://ongrid-backend.vercel.app/api/auth/forgot-password",
         { email, newPassword,answer }
       );
       if (res.data.success) {

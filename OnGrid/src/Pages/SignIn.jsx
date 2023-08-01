@@ -16,7 +16,7 @@ function SignIn() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:1009/api/auth/login",
+        "https://ongrid-backend.vercel.app/api/auth/login",
         {email, password }
       );
       console.log(res.data.message)

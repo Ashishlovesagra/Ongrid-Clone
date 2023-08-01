@@ -16,7 +16,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:1009/api/auth/register", {
+      const res = await axios.post("https://ongrid-backend.vercel.app/api/auth/register", {
         name,
         email,
         phone,
